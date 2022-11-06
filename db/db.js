@@ -22,7 +22,6 @@ export default {
 			color: "2",
 			percentage: "40",
 		},
-		
 		{
 			title: "Design",
 			skillName: "HTML, Bootstrap, SCSS",
@@ -87,9 +86,9 @@ export default {
 					"Browser based editor to build and download Resumes in a customizable templates.",
 				preview: "https://vinaysomawat.github.io/Resume-Builder",
 				techStack: ["HTML", "Bootstrap", "JavaScript"],
-			}
-		
-
+			},
+		],
+		software: [
 			{
 				projectName: "WhatsApp-Bot",
 				image: "images/whatsappbot.jpg",
