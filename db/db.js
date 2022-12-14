@@ -34,12 +34,7 @@ export default {
 			color: "7",
 			percentage: "70",
 		},
-		{
-			title: "Tools",
-			skillName: "Postman, Chrome DevTools",
-			color: "3",
-			percentage: "80",
-		},
+		
 		{
 			title: "Editor",
 			skillName: "VS Code",
