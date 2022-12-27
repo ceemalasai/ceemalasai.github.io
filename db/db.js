@@ -24,7 +24,7 @@ export default {
 		},
 		{
 			title: "Design",
-			skillName: "HTML, Bootstrap, SCSS",
+			skillName: "HTML, Bootstrap, CSS",
 			color: "4",
 			percentage: "70",
 		},
