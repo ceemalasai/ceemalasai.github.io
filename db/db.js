@@ -72,31 +72,25 @@ export default {
 	],
 	education: [
 		{
-			title: "Bachelors in Computer Science and Engineering",
-			duration: "",
-			subtitle: "National Institute of Technology, Warangal",
+			title: "Bachelors in Electronics and communication Engineering",
+			duration: "2018-2022",
+			subtitle: "Bharath Institute of Higher Education and Research", 
 			details: [
-				"Qualified GATE-2020.",
-				"Active Competitive Programmer with CodeChef Rating 1841*.",
-				"Received 500+ stars and 300+ forks on GitHub projects.",
+				"Completed coursework  Operating Systems, Database Management System, Computer Networks.",
 			],
 			tags: [
-				"Data Structures & Algorithms",
 				"Operating Systems",
 				"Database Management System",
 				"Computer Networks",
-				"Compiler Designing",
-				"Cloud Computing",
 			],
 			icon: "graduation-cap",
 		},
 		{
 			title: "Class 11-12th in Science and Mathematics",
 			duration: "",
-			subtitle: "Board of Secondary Education, Rajasthan",
+			subtitle: "Board of Secondary Education, Andra pradesh",
 			details: [
-				"Qualified JEE Advanced, Main & BITSAT.",
-				"Secured 99.5 percentile in Class 12th Boards Examinations.",
+				"Secured 88 percentile in Class 12th Boards Examinations.",
 			],
 			tags: ["Physics", "Chemistry", "Mathematics"],
 			icon: "book",
