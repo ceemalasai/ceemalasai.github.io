@@ -54,14 +54,14 @@ export default {
 			},
 		],
 		software: [
-			{
-				projectName: "Slack-Bot",
-				image: "images/whatsappbot.jpg",
-				summary:
-					"Python script which helps to send messages to WhatsApp contacts automatically using selenium and web automation.",
-				preview: "https://github.com/ceemalasai/ceemalasai.github.io",
-				techStack: ["Python"],
-			},
+			// {
+			// 	projectName: "Slack-Bot",
+			// 	image: "images/whatsappbot.jpg",
+			// 	summary:
+			// 		"Python script which helps to send messages to WhatsApp contacts automatically using selenium and web automation.",
+			// 	preview: "https://github.com/ceemalasai/ceemalasai.github.io",
+			// 	techStack: ["Python"],
+			// },
 		],
 		android: [
 		],
