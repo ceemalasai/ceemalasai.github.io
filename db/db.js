@@ -54,14 +54,14 @@ export default {
 			},
 		],
 		software: [
-			{
-				projectName: "WhatsApp-Bot",
-				image: "images/whatsappbot.jpg",
-				summary:
-					"Python script which helps to send messages to WhatsApp contacts automatically using selenium and web automation.",
-				preview: "https://github.com/vinaysomawat/WhatsApp-Bot",
-				techStack: ["Selenium", "Chrome Webdriver", "Python"],
-			},
+			// {
+			// 	projectName: "WhatsApp-Bot",
+			// 	image: "images/whatsappbot.jpg",
+			// 	summary:
+			// 		"Python script which helps to send messages to WhatsApp contacts automatically using selenium and web automation.",
+			// 	preview: "https://github.com/ceemalasai/ceemalasai.github.io",
+			// 	techStack: ["Python"],
+			// },
 		],
 		android: [
 		],
@@ -134,7 +134,7 @@ export default {
 			data: [
 				{
 					text: "Linkedin",
-					link: "https://www.linkedin.com/in/vinaysomawat/",
+					link: "https://www.linkedin.com/in/-kishore-84a854252",
 				},
 			],
 		},
