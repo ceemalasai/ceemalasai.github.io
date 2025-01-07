@@ -43,7 +43,7 @@ export default {
 		},
 	],
 	projects: {
-		web: [
+		
 			{
 				projectName: "Home System Using Voice Assistant",
 				image: "images/portfolio.png",
@@ -52,7 +52,6 @@ export default {
 				preview: "https://github.com/ceemalasai/ceemalasai.github.io",
 				techStack: ["Java"],
 			},
-		],
 		software: [
 			// {
 			// 	projectName: "Slack-Bot",
