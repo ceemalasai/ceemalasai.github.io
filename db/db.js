@@ -23,8 +23,8 @@ export default {
 			percentage: "65",
 		},
 		{
-			title: "Design",
-			skillName: "HTML, Bootstrap, CSS",
+			title: "operating system",
+			skillName: ", Linux",
 			color: "4",
 			percentage: "70",
 		},
