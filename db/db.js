@@ -42,16 +42,17 @@ export default {
 			percentage: "70",
 		},
 	],
-	projects: {
-		
-			{
-				projectName: "Home System Using Voice Assistant",
-				image: "images/portfolio.png",
-				summary:
-					"Web Portfolio to showcase acadmics, skills, projects and contact details in better manner.",
-				preview: "https://github.com/ceemalasai/ceemalasai.github.io",
-				techStack: ["Java"],
-			},
+    projects: {
+		web: [
+		  {
+			projectName: "Home System Using Voice Assistant",
+			image: "images/portfolio.png",
+			summary: "Web Portfolio to showcase academics, skills, projects, and contact details in a better manner.",
+			preview: "https://github.com/ceemalasai/ceemalasai.github.io",
+			techStack: ["Java"]
+		  }
+		],
+	
 		software: [
 			// {
 			// 	projectName: "Slack-Bot",
