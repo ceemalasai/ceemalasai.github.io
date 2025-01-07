@@ -45,12 +45,12 @@ export default {
 	projects: {
 		web: [
 			{
-				projectName: "Web Portfolio",
+				projectName: "Home System Using Voice Assistant",
 				image: "images/portfolio.png",
 				summary:
 					"Web Portfolio to showcase acadmics, skills, projects and contact details in better manner.",
 				preview: "https://github.com/ceemalasai/ceemalasai.github.io",
-				techStack: ["HTML", "Bootstrap", "JavaScript"],
+				techStack: ["Java"],
 			},
 		],
 		software: [
