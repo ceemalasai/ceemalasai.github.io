@@ -24,7 +24,7 @@ export default {
 		},
 		{
 			title: "operating system",
-			skillName: ", Linux",
+			skillName: "Linux",
 			color: "4",
 			percentage: "70",
 		},
