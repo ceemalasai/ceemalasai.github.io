@@ -48,7 +48,7 @@ export default {
 			projectName: "Home System Using Voice Assistant",
 			image: "images/portfolio.png",
 			summary: "Smart virtual assistants, such as Google Home or Amazon Echo, can accomplish tasks through speech recognition and voice commands. For example, homeowners can use voice commands to turn on music, search the web and control their household smart devices.",
-			preview: "https://github.com/ceemalasai/ceemalasai.github.io",
+	     	preview: "https://github.com/ceemalasai/ceemalasai.github.io",
 			techStack: ["Java"]
 		  }
 		],
