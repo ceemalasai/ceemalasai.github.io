@@ -129,8 +129,7 @@ export default {
 				{
 					text: "Linkedin",
 					link: "https://www.linkedin.com/in/-kishore-84a854252",
-					text: "Github",
-					link: "https://github.com/ceemalasai",
+					
 				},
 			],
 		},
