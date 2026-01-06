@@ -2399,3 +2399,33 @@ span {
     font-weight: bold;
     font-size: 18px;
 }
+/* Light Grey Background for Skills and Contact */
+.colorlib-skills, 
+.colorlib-contact {
+    background-color: #f4f6f7 !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Keep About and Education White */
+.colorlib-about, 
+.colorlib-education {
+    background-color: #ffffff;
+}
+/* Dark Background for Skills & Contact */
+.colorlib-skills, 
+.colorlib-contact {
+    background-color: #2c3e50 !important; /* Dark Blue-Grey */
+    color: #ffffff !important; /* Text turns white */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Make headers white in these sections */
+.colorlib-skills h2, 
+.colorlib-contact h2,
+.colorlib-skills h3,
+.colorlib-contact p,
+.colorlib-contact a {
+    color: #ffffff !important;
+}
