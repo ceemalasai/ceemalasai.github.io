@@ -672,7 +672,7 @@ body.offcanvas .colorlib-nav-toggle {
 	padding: 0;
 }
 
-<!-----projectcss------------ > #projects {
+#projects {
 	padding: 50px 15px;
 	border-bottom: 1px solid #dcd9d9;
 	text-align: center;
@@ -2239,4 +2239,52 @@ span {
     text-align: right;
     font-weight: 600;
 }
-  
+  /* General Text Styling */
+.about-intro {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Dark grey for readability */
+}
+
+.about-desc {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6; /* Adds breathing room between lines */
+}
+
+.list-header {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2c3e50; /* A professional dark blue-grey */
+}
+
+/* The List Container */
+.identity-list {
+    list-style-type: none; /* Removes default bullets */
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+/* The Individual List Cards */
+.identity-card {
+    background-color: #f9f9f9; /* Light grey background */
+    border-left: 5px solid #2c98f0; /* Blue accent bar on the left */
+    padding: 15px;
+    margin-bottom: 12px; /* Space between items */
+    border-radius: 4px; /* Rounded corners on the right */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect - Makes the card pop slightly when you mouse over */
+.identity-card:hover {
+    transform: translateX(5px); /* Moves slightly right */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+/* Bold Text Styling inside the list */
+.identity-card strong {
+    color: #2c98f0; /* Matches the border color */
+    font-weight: 700;
+}
