@@ -2433,14 +2433,14 @@ span {
 
 /* Skills Section - Light Grey */
 .colorlib-skills {
-    background-color: #f2f3f7 !important;
+    background-color: #5b689b !important;
     padding-top: 60px !important;
     padding-bottom: 60px !important;
 }
 
 /* Education Section - Light Grey (Matches Skills) */
 .colorlib-education {
-    background-color: #f2f3f7 !important;
+    background-color: #456b7c !important;
     padding-top: 60px !important;
     padding-bottom: 60px !important;
 }
@@ -2459,7 +2459,7 @@ span {
 .colorlib-contact h3, 
 .colorlib-contact p, 
 .colorlib-contact a {
-    color: #ffffff !important;
+    color: #84dabd !important;
 }
 
 /* Fix Link Hover Color in Contact Section */
