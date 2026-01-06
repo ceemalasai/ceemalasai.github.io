@@ -21,7 +21,7 @@ export default {
 			title: "Backend Development",
 			skillName: "Python, MySQL",
 			color: "2",
-			percentage: "75",
+			percentage: "80",
 		},
 		{
 			title: "operating system",
