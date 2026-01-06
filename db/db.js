@@ -18,20 +18,20 @@ export default {
 	},
 	skills: [
 		{
-			title: "Backend",
+			title: "Backend Development",
 			skillName: "Python, MySQL",
 			color: "2",
-			percentage: "100",
+			percentage: "75",
 		},
 		{
 			title: "operating system",
-			skillName: "Linux",
+			skillName: "Linux (Ubuntu/Debian)",
 			color: "4",
 			percentage: "70",
 		},
 		{
 			title: "Version Control",
-			skillName: "GitHub",
+			skillName: "Git & GitHub",
 			color: "7",
 			percentage: "70",
 		},
