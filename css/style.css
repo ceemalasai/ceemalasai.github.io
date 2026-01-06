@@ -2429,3 +2429,40 @@ span {
 .colorlib-contact a {
     color: #ffffff !important;
 }
+/* --- SECTION BACKGROUND COLORS --- */
+
+/* Skills Section - Light Grey */
+.colorlib-skills {
+    background-color: #f2f3f7 !important;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+/* Education Section - Light Grey (Matches Skills) */
+.colorlib-education {
+    background-color: #f2f3f7 !important;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+/* Contact Section - Dark Theme (Professional Footer Look) */
+.colorlib-contact {
+    background-color: #2c3e50 !important; /* Dark Blue-Grey */
+    color: #ffffff !important; /* White Text */
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+/* Fix Text Colors inside the Dark Contact Section */
+.colorlib-contact h1, 
+.colorlib-contact h2, 
+.colorlib-contact h3, 
+.colorlib-contact p, 
+.colorlib-contact a {
+    color: #ffffff !important;
+}
+
+/* Fix Link Hover Color in Contact Section */
+.colorlib-contact a:hover {
+    color: #2c98f0 !important; /* Light Blue on hover */
+}
