@@ -2340,3 +2340,62 @@ span {
     color: #2c98f0; /* Blue checkmark */
     font-weight: bold;
 }
+/* --- Skills Card Design --- */
+
+/* The Card Container */
+.skill-category {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); /* Soft shadow */
+    border-left: 6px solid #2c98f0; /* Blue accent line */
+    transition: transform 0.3s ease;
+    text-align: left;
+    width: 100%;
+}
+
+/* Hover Animation */
+.skill-category:hover {
+    transform: translateY(-5px); /* Floats up slightly */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Category Headings */
+.skill-category h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #eee; /* Thin grey line under title */
+    padding-bottom: 10px;
+}
+
+/* List Formatting */
+.skill-category ul {
+    list-style: none !important; /* Forces bullets to go away */
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* List Items */
+.skill-category ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+    padding-left: 30px; /* Space for the checkmark */
+    position: relative;
+    font-weight: 500;
+}
+
+/* The Blue Checkmark Icon */
+.skill-category ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #2c98f0; /* Blue color */
+    font-weight: bold;
+    font-size: 18px;
+}
