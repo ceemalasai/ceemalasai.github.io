@@ -3,9 +3,10 @@ export default {
 		about: {
 			text: [
 				"Hi &#128075;",
-				"I'm Saikishore. I’m currently graduated in a Bharath University specialized in Electronics and communications.",
-				"I'm a student, geek and curious human besides being an OpenSource enthusiast. I have experience of delivering solutions for interesting problems from startup and industry space.",
-				"I love to read, listen to music, and travel.",
+		    "I'm Sai Kishore. I am a recent Electronics and Communication Engineering graduate from Bharath University;",
+
+            "I describe myself as a curious geek and a passionate Open Source enthusiast. While I love technology, I also believe in work-life balance—when I'm not coding, you can find me playing cricket or traveling to new places.",
+				
 			],
 		},
 		contact: {
