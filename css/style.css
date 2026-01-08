@@ -2281,28 +2281,37 @@ span {
 }
 
 
-/* Make headers white in these sections */
-.colorlib-skills h2, 
+/* Make headers white in the Contact section only */
+.colorlib-contact h1,
 .colorlib-contact h2,
-.colorlib-skills h3,
+.colorlib-contact h3,
 .colorlib-contact p,
 .colorlib-contact a {
     color: #ffffff !important;
 }
 /* --- SECTION BACKGROUND COLORS --- */
 
-/* Skills Section - Light Grey */
-.colorlib-skills {
-    background-color: #959b5b !important;
+/* Skills & Education — Light background for improved readability */
+.colorlib-skills,
+.colorlib-education {
+    background-color: #f8fafc !important; /* very light */
+    color: #1e2641 !important; /* dark text */
     padding-top: 60px !important;
     padding-bottom: 60px !important;
 }
 
-/* Education Section - Light Grey (Matches Skills) */
-.colorlib-education {
-    background-color: #456b7c !important;
-    padding-top: 60px !important;
-    padding-bottom: 60px !important;
+/* Ensure headings and links inside these sections use the dark text */
+.colorlib-skills h1,
+.colorlib-skills h2,
+.colorlib-skills h3,
+.colorlib-skills p,
+.colorlib-skills a,
+.colorlib-education h1,
+.colorlib-education h2,
+.colorlib-education h3,
+.colorlib-education p,
+.colorlib-education a {
+    color: #1e2641 !important;
 }
 
 /* Contact Section - Dark Theme (Professional Footer Look) */
