@@ -352,6 +352,7 @@ figure figcaption {
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;
 	transition: 0.5s;
+	background-color: #eef7f4; /* muted pastel to reduce stark whiteness */
 }
 @media screen and (max-width: 768px) {
 	#colorlib-main {
