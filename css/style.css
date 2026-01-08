@@ -2291,6 +2291,20 @@ span {
     padding-left: 36px;
 }
 
+/* Icons next to skill headings */
+.skill-emoji {
+    font-size: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.skill-category h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 
 /* Keep About and Education White */
 .colorlib-about, 
