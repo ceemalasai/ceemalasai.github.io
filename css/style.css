@@ -31,6 +31,7 @@ body {
 	font-size: 15px;
 	line-height: 1.8;
 	color: black;
+	background-color: #eef7f4; /* page-wide muted pastel */
 }
 @media screen and (max-width: 992px) {
 	body {
@@ -363,7 +364,7 @@ figure figcaption {
 
 #colorlib-hero {
 	min-height: 500px;
-	background: #fff url(../images/loader.gif) no-repeat center center;
+	background: #eef7f4 url(../images/loader.gif) no-repeat center center;
 	width: 100%;
 	float: left;
 	margin-bottom: 10em;
