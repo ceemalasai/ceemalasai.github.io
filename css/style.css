@@ -2292,11 +2292,11 @@ span {
 }
 /* --- SECTION BACKGROUND COLORS --- */
 
-/* Skills & Education — Light background for improved readability */
+/* Skills & Education — Muted pastel accent for improved readability */
 .colorlib-skills,
 .colorlib-education {
-    background-color: #f8fafc !important; /* very light */
-    color: #1e2641 !important; /* dark text */
+    background-color: #eef7f4 !important; /* muted pastel accent */
+    color: #15332a !important; /* dark green text */
     padding-top: 60px !important;
     padding-bottom: 60px !important;
 }
@@ -2312,7 +2312,7 @@ span {
 .colorlib-education h3,
 .colorlib-education p,
 .colorlib-education a {
-    color: #1e2641 !important;
+    color: #15332a !important;
 }
 
 /* Contact Section - Dark Theme (Professional Footer Look) */
