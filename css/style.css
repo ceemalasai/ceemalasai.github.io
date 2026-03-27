@@ -71,7 +71,16 @@ body {
     background-color: #eef7f4 !important;
     padding: 60px 0;
 }
+/* Create a clear distinction between white and tinted sections */
+.colorlib-skills, 
+.colorlib-projects {
+    background-color: #ffffff;
+}
 
+.colorlib-education {
+    background-color: #f2f3f7 !important; /* Very light grey to separate from white */
+    padding: 60px 0;
+}
 .colorlib-skills, 
 .colorlib-projects {
     background-color: #ffffff;
