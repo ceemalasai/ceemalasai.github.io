@@ -4,179 +4,114 @@
 * ======================================================= */
 
 @font-face {
-	font-family: "icomoon";
-	src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-	src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"),
-		url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
-		url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
-		url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
-	font-weight: normal;
-	font-style: normal;
+    font-family: "icomoon";
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"),
+        url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
+        url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
+        url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: "Quicksand", Arial, sans-serif;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 1.8;
-	color: #333;
-	background-color: #eef7f4; /* Muted pastel background */
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+    background-color: #eef7f4; 
 }
 
 /* --- Sidebar & Navigation --- */
 #colorlib-aside {
-	padding-top: 3em;
-	width: 300px;
-	position: fixed;
-	z-index: 1001;
-	background-color: #f9bf3f; /* Signature Golden-Yellow */
-	height: 100vh;
-	transition: 0.5s;
+    padding-top: 3em;
+    width: 300px;
+    position: fixed;
+    z-index: 1001;
+    background-color: #f9bf3f; 
+    height: 100vh;
+    transition: 0.5s;
+    overflow-y: auto; /* Allows sidebar scrolling if menu is long */
 }
 
 #colorlib-aside .author-img img {
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	object-fit: cover;
-	border: 4px solid rgba(255, 255, 255, 0.3);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
 }
 
 #colorlib-aside #colorlib-main-menu ul li a {
-	color: rgba(0, 0, 0, 0.7);
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 13px;
-	font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* --- Main Content Area Fix --- */
+#colorlib-main {
+    width: calc(100% - 300px); /* Adjusts width based on sidebar */
+    float: right;
+    margin-left: 300px; /* CRITICAL FIX: Pushes content out from under sidebar */
+    transition: 0.5s;
 }
 
 /* --- Section Design --- */
 .colorlib-about, 
 .colorlib-education {
-	background-color: #eef7f4 !important;
-	padding: 60px 0;
+    background-color: #eef7f4 !important;
+    padding: 60px 0;
 }
 
 .colorlib-skills, 
 .colorlib-projects {
-	background-color: #ffffff;
-	padding: 60px 0;
+    background-color: #ffffff;
+    padding: 60px 0;
 }
 
 /* --- Skills Cards (SDET Focus) --- */
 .skill-category {
-	background: #ffffff;
-	padding: 30px;
-	margin-bottom: 30px;
-	border-radius: 8px;
-	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-	border-left: 6px solid #2c98f0; /* Blue accent bar */
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-left: 6px solid #2c98f0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-category:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.skill-category h3 {
-	font-size: 18px;
-	font-weight: 700;
-	color: #2c3e50;
-	margin-bottom: 20px;
-	display: flex;
-	align-items: center;
-}
-
-.skill-category ul {
-	list-style: none !important;
-	padding: 0 !important;
-}
-
-.skill-category ul li {
-	margin-bottom: 12px;
-	font-weight: 500;
-	color: #555;
-	transition: transform 0.2s ease;
-}
-
-.skill-category ul li i {
-	color: #2c98f0;
-	margin-right: 10px;
-	width: 20px;
-	text-align: center;
-}
-
-.skill-category ul li:hover {
-	transform: translateX(5px);
-	color: #2c98f0;
-}
-
-/* --- Timeline & Experience --- */
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
-	opacity: 0.4;
-	font-size: 16px;
-} /* Critical Fix: Added missing closing brace */
-
-/* --- Project Accordion --- */
-.accordion {
-	background: #f9bf3f;
-	border-radius: 4px;
-	overflow: hidden;
-}
-
-.accordion .link {
-	cursor: pointer;
-	padding: 15px 20px;
-	font-weight: 700;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
-	transition: background 0.3s ease;
-}
-
-.accordion .link:hover {
-	background: rgba(0,0,0,0.05);
-}
-
-.submenu {
-	display: none;
-	background: #fff;
-	padding: 20px;
-}
-
-/* --- Contact Section (Dark Theme) --- */
+/* --- Contact Section --- */
 .colorlib-contact {
-	background-color: #2c3e50 !important;
-	color: #ffffff !important;
-	padding: 60px 0;
-}
-
-.colorlib-contact h1, 
-.colorlib-contact p, 
-.colorlib-contact a {
-	color: #ffffff !important;
+    background-color: #2c3e50 !important;
+    color: #ffffff !important;
+    padding: 60px 0;
 }
 
 .colorlib-contact a {
-	color: #84dabd !important; /* Light teal for links */
-	text-decoration: underline;
+    color: #84dabd !important;
 }
 
 /* --- Responsive Adjustments --- */
 @media screen and (max-width: 768px) {
-	#colorlib-aside {
-		width: 300px;
-		transform: translateX(-300px);
-	}
-	#colorlib-main {
-		width: 100%;
-	}
-	.colorlib-nav-toggle {
-		visibility: visible;
-	}
+    #colorlib-aside {
+        width: 300px;
+        transform: translateX(-300px); /* Hides sidebar on mobile */
+    }
+    #colorlib-main {
+        width: 100%;
+        margin-left: 0; /* Content takes full width on small screens */
+    }
 }
-
