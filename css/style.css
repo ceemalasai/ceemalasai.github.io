@@ -62,6 +62,7 @@ body {
     float: right;
     margin-left: 300px; /* CRITICAL FIX: Pushes content out from under sidebar */
     transition: 0.5s;
+	position: relative;
 }
 
 /* --- Section Design --- */
@@ -103,6 +104,14 @@ body {
 .colorlib-contact a {
     color: #84dabd !important;
 }
+/* --- Content Spacing --- */
+.colorlib-narrow-content {
+    padding: 0 4.5em; /* Adds professional breathing room on the sides */
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
 
 /* --- Responsive Adjustments --- */
 @media screen and (max-width: 768px) {
