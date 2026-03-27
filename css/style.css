@@ -1,6 +1,7 @@
 /* =======================================================
 * Sai Kishore Portfolio - Global Styles
 * Optimized for SDET & Automation Engineer Profile
+* Fixes: Sidebar overlap, Content spacing, & Section visibility
 * ======================================================= */
 
 @font-face {
@@ -25,6 +26,8 @@ body {
     line-height: 1.8;
     color: #333;
     background-color: #eef7f4; 
+    margin: 0;
+    padding: 0;
 }
 
 /* --- Sidebar & Navigation --- */
@@ -32,11 +35,13 @@ body {
     padding-top: 3em;
     width: 300px;
     position: fixed;
+    left: 0;
+    top: 0;
     z-index: 1001;
     background-color: #f9bf3f; 
     height: 100vh;
     transition: 0.5s;
-    overflow-y: auto; /* Allows sidebar scrolling if menu is long */
+    overflow-y: auto;
 }
 
 #colorlib-aside .author-img img {
@@ -54,40 +59,56 @@ body {
     letter-spacing: 1px;
     font-size: 13px;
     font-weight: 600;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+#colorlib-aside #colorlib-main-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
 }
 
 /* --- Main Content Area Fix --- */
 #colorlib-main {
-    width: calc(100% - 300px); /* Adjusts width based on sidebar */
+    width: calc(100% - 300px); 
     float: right;
-    margin-left: 300px; /* CRITICAL FIX: Pushes content out from under sidebar */
+    margin-left: 300px; 
     transition: 0.5s;
-	position: relative;
+    position: relative;
+    min-height: 100vh;
 }
 
-/* --- Section Design --- */
-.colorlib-about, 
-.colorlib-education {
+/* --- Content Spacing Class --- */
+.colorlib-narrow-content {
+    padding: 80px 4.5em; 
+    width: 100%;
+    float: left;
+}
+
+/* --- Section Styling --- */
+section {
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+.colorlib-about {
     background-color: #eef7f4 !important;
-    padding: 60px 0;
 }
-/* Create a clear distinction between white and tinted sections */
+
 .colorlib-skills, 
 .colorlib-projects {
     background-color: #ffffff;
 }
 
 .colorlib-education {
-    background-color: #f2f3f7 !important; /* Very light grey to separate from white */
-    padding: 60px 0;
-}
-.colorlib-skills, 
-.colorlib-projects {
-    background-color: #ffffff;
-    padding: 60px 0;
+    background-color: #f2f3f7 !important;
 }
 
-/* --- Skills Cards (SDET Focus) --- */
+/* --- Skills Cards --- */
 .skill-category {
     background: #ffffff;
     padding: 30px;
@@ -103,33 +124,86 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* --- Contact Section --- */
+.skill-category h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.skill-category ul {
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+.skill-category ul li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-category ul li i {
+    color: #2c98f0;
+    margin-right: 10px;
+}
+
+/* --- Contact Section Fix --- */
 .colorlib-contact {
-    background-color: #2c3e50 !important;
+    background-color: #2c3e50 !important; 
     color: #ffffff !important;
-    padding: 60px 0;
+    padding: 0 !important; /* Reset padding to use narrow-content padding */
+}
+
+/* Ensure narrow content inside contact inherits colors */
+.colorlib-contact .colorlib-narrow-content {
+    background-color: #2c3e50 !important;
+}
+
+.colorlib-contact h1, 
+.colorlib-contact h2,
+.colorlib-contact p,
+.colorlib-contact b {
+    color: #ffffff !important;
 }
 
 .colorlib-contact a {
-    color: #84dabd !important;
-}
-/* --- Content Spacing --- */
-.colorlib-narrow-content {
-    padding: 0 4.5em; /* Adds professional breathing room on the sides */
-    width: 100%;
-    float: left;
-    position: relative;
+    color: #84dabd !important; 
+    font-weight: bold;
+    text-decoration: underline;
 }
 
+.colorlib-contact a:hover {
+    color: #ffffff !important;
+}
 
 /* --- Responsive Adjustments --- */
+@media screen and (max-width: 992px) {
+    .colorlib-narrow-content {
+        padding: 40px 2em;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #colorlib-aside {
         width: 300px;
-        transform: translateX(-300px); /* Hides sidebar on mobile */
+        transform: translateX(-300px); 
     }
     #colorlib-main {
         width: 100%;
-        margin-left: 0; /* Content takes full width on small screens */
+        margin-left: 0; 
     }
+    .colorlib-narrow-content {
+        padding: 40px 1.5em;
+    }
+}
+
+/* Utility classes from template */
+.animate-box {
+    opacity: 1; /* Default to visible if JS hasn't run yet */
+}
+
+h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
