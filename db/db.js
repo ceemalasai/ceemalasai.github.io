@@ -17,8 +17,8 @@ export default {
     skills: [
         {
             title: "🧪 Automation & Testing",
-            skillName: "Playwright, Selenium, TestNG",
-            percentage: "90",
+            skillName: "Playwright, Selenium, TestNG, Cucumber",
+            percentage: "95",
         },
         {
             title: "💻 Languages & Backend",
@@ -27,30 +27,29 @@ export default {
         },
         {
             title: "🐧 Operating System",
-            skillName: "Linux (Ubuntu, Debian), Shell",
+            skillName: "Linux (Ubuntu/Debian), Shell Scripting",
             percentage: "80",
         },
         {
             title: "🔁 Version Control & Tools",
             skillName: "Git, GitHub, AWS, VS Code",
-            percentage: "75",
+            percentage: "85",
         },
     ],
-
-projects: {
+    projects: {
         web: [
             {
                 projectName: "Home System Using Voice Assistant",
                 image: "images/portfolio.png",
-                summary: "Smart virtual assistants, such as Google Home or Amazon Echo, can accomplish tasks through speech recognition and voice commands. For example, homeowners can use voice commands to turn on music, search the web and control their household smart devices.",
+                summary: "Smart virtual assistants tasks through speech recognition and voice commands to control household smart devices.",
                 preview: "https://github.com/ceemalasai/ceemalasai.github.io",
                 techStack: ["Java"]
             },
             {
                 projectName: "Friends Chat Box",
                 image: "images/chatbox.png",
-                summary: "A real-time messaging application enabling instant communication between friends using web sockets. Features private rooms and a responsive UI.",
-                preview: "#",
+                summary: "A real-time messaging application enabling instant communication using web sockets. Features private rooms.",
+                preview: "https://github.com/ceemalasai",
                 techStack: ["Python", "Flask", "Socket.IO", "MySQL"]
             }
         ],
@@ -58,83 +57,28 @@ projects: {
             {
                 projectName: "Playwright Automation Framework",
                 image: "images/automation.png",
-                summary: "A professional-grade E2E testing framework built with Playwright and Java, utilizing the Page Object Model (POM) for scalability.",
-                preview: "#",
+                summary: "A professional-grade E2E testing framework built with Playwright and Java, utilizing POM for scalability.",
+                preview: "https://github.com/ceemalasai",
                 techStack: ["Java", "Playwright", "TestNG"]
             }
-        ],
-        android: [],
-        freelance: [],
+        ]
     },
-    experience: [],
     education: [
         {
-            title: "Bachelors in Electronics and communication Engineering",
+            title: "Bachelors in Electronics and Communication Engineering",
             duration: "2018-2022",
             subtitle: "Bharath Institute of Higher Education and Research",
             details: [
-                "Completed coursework  Operating Systems, Database Management System, Computer Networks.",
-            ],
-            tags: [
-                "Operating Systems",
-                "Database Management System",
-                "Computer Networks",
-            ],
-            icon: "graduation-cap",
+                "Completed coursework in Operating Systems, Database Management System, and Computer Networks.",
+            ]
         },
         {
             title: "Class 11-12th in Science and Mathematics",
-            duration: "",
-            subtitle: "Board of Secondary Education, Andra pradesh",
+            duration: "2016-2018",
+            subtitle: "Board of Secondary Education, Andhra Pradesh",
             details: [
-                "Secured 88 percentile in Class 12th Boards Examinations.",
-            ],
-            tags: ["Physics", "Chemistry", "Mathematics"],
-            icon: "book",
-        },
-    ],
-    footer: [
-        {
-            label: "Dev Profiles",
-            data: [
-                {
-                    text: "GitHub",
-                    link: "https://github.com/ceemalasai",
-                },
-            ],
-        },
-        {
-            label: "Resources",
-            data: [
-                {
-                    text: "Enable Dark/Light Mode",
-                    func: "enableDarkMode()",
-                },
-                {
-                    text: "Print this page",
-                    func: "window.print()",
-                },
-                {
-                    text: "Clone this page",
-                    link: "https://github.com/ceemalasai/ceemalasai.github.io",
-                },
-            ],
-        },
-        {
-            label: "Social Profiles",
-            data: [
-                {
-                    text: "Linkedin",
-                    link: "https://www.linkedin.com/in/saikishore-ceemala/",
-                },
-            ],
-        },
-        {
-            label: "copyright-text",
-            data: [
-                "Made with &hearts; by Ceemala SAI.",
-                "&copy; No Copyrights. Feel free to use this template."
-            ],
-        },
-    ],
+                "Secured 88 percentile in Class 12th Board Examinations.",
+            ]
+        }
+    ]
 };
