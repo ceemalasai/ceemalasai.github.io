@@ -1,35 +1,28 @@
 /**
  * Sai Kishore Portfolio - Main Logic
  * Merged Project Populator & UI Interactions
- * Optimized for provided HTML structure
  */
 import data from './db.js';
 
 (function () {
     'use strict';
 
-    // --- 1. Data Injection Logic ---
-
     const populatePortfolio = () => {
         // --- About Section ---
         const aboutContainer = document.querySelector('.about-container');
         if (aboutContainer && data.bio) {
-            // Update Intro (Hi I'm Sai Kishore)
             const introPara = aboutContainer.querySelector('.about-intro');
             if (introPara && data.bio.about.text[0]) {
                 introPara.innerHTML = data.bio.about.text[0];
             }
 
-            // Update Main Bio Description (The paragraph)
             const descPara = aboutContainer.querySelector('p:not(.about-intro):not(.list-header)');
             if (descPara && data.bio.about.text[1]) {
                 descPara.innerHTML = data.bio.about.text[1];
             }
 
-            // Update "What I Do" Identity Cards
             const identityList = aboutContainer.querySelector('.identity-list');
             if (identityList && data.bio.about.text[2]) {
-                // Split string logic: "🚀 What I Do: Automation: desc; Development: desc; ..."
                 const itemsStr = data.bio.about.text[2].includes('🚀 What I Do: ') 
                     ? data.bio.about.text[2].split('🚀 What I Do: ')[1] 
                     : data.bio.about.text[2];
@@ -40,7 +33,6 @@ import data from './db.js';
                     const parts = item.split(': ');
                     const title = parts[0] || "";
                     const desc = parts[1] || "";
-                    // Determine Emojis based on content (Optional UI touch)
                     let emoji = "🛠️";
                     if (title.toLowerCase().includes('dev')) emoji = "💻";
                     if (title.toLowerCase().includes('env') || title.toLowerCase().includes('linux')) emoji = "🐧";
@@ -50,33 +42,33 @@ import data from './db.js';
             }
         }
 
-       // --- Technical Skills Section ---
-const skillCategories = document.querySelectorAll('.skill-category');
-if (skillCategories.length > 0 && data.skills) {
-    data.skills.forEach((skill, index) => {
-        if (skillCategories[index]) {
-            const titleEl = skillCategories[index].querySelector('h3');
-            const listEl = skillCategories[index].querySelector('ul');
-            
-            if (titleEl) titleEl.innerHTML = skill.title;
-            if (listEl) {
-                // Map icons to the 4 boxes defined in your HTML
-                const icons = ["fa-check-square-o", "fa-code", "fa-linux", "fa-github"];
-                const icon = icons[index] || "fa-code";
+        // --- Technical Skills Section ---
+        const skillCategories = document.querySelectorAll('.skill-category');
+        if (skillCategories.length > 0 && data.skills) {
+            data.skills.forEach((skill, index) => {
+                if (skillCategories[index]) {
+                    const titleEl = skillCategories[index].querySelector('h3');
+                    const listEl = skillCategories[index].querySelector('ul');
+                    
+                    if (titleEl) titleEl.innerText = skill.title;
+                    if (listEl) {
+                        // Map icons to the physical order in index.html
+                        const icons = ["fa-check-square-o", "fa-code", "fa-linux", "fa-github"];
+                        const currentIcon = icons[index] || "fa-code";
 
-                listEl.innerHTML = `
-                    <li><i class="fa ${icon}"></i> ${skill.skillName}</li>
-                    <li style="font-size: 12px; color: #888; margin-top: 5px;">
-                        <div style="width: 100%; background: #eee; height: 4px; border-radius: 2px; margin-bottom: 3px;">
-                            <div style="width: ${skill.percentage}%; background: #2c98f0; height: 100%; border-radius: 2px;"></div>
-                        </div>
-                        Proficiency: ${skill.percentage}%
-                    </li>
-                `;
-            }
+                        listEl.innerHTML = `
+                            <li><i class="fa ${currentIcon}"></i> ${skill.skillName}</li>
+                            <li style="font-size: 12px; color: #888; margin-top: 5px;">
+                                <div style="width: 100%; background: #eee; height: 5px; border-radius: 5px; margin-bottom: 3px;">
+                                    <div style="width: ${skill.percentage}%; background: #2c98f0; height: 100%; border-radius: 5px;"></div>
+                                </div>
+                                Proficiency: ${skill.percentage}%
+                            </li>
+                        `;
+                    }
+                }
+            });
         }
-    });
-}
 
         // --- Projects Section ---
         const populateProjectList = (projectList, containerId) => {
@@ -122,17 +114,14 @@ if (skillCategories.length > 0 && data.skills) {
         }
     };
 
-    // --- 2. UI Interaction Logic ---
-
     const sidebarToggle = () => {
         $('.js-colorlib-nav-toggle').on('click', function(event) {
             event.preventDefault();
-            const $this = $(this);
             if ($('body').hasClass('offcanvas')) {
-                $this.removeClass('active');
+                $(this).removeClass('active');
                 $('body').removeClass('offcanvas');	
             } else {
-                $this.addClass('active');
+                $(this).addClass('active');
                 $('body').addClass('offcanvas');	
             }
         });
@@ -167,12 +156,10 @@ if (skillCategories.length > 0 && data.skills) {
         });
     };
 
-    // --- 3. Initialize ---
     $(function() {
         populatePortfolio();
         sidebarToggle();
         accordionToggle();
         smoothScroll();
     });
-
 }());
