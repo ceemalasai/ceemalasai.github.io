@@ -12,6 +12,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="icon" type="image/png" href="images/logo.png">
       <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+      
       <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/style.css">
@@ -22,7 +23,10 @@
    <body>
       <div id="colorlib-page">
          <div class="container-wrap">
-            <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+            <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" 
+               data-toggle="collapse" data-target="#navbar" 
+               aria-expanded="false" aria-controls="navbar"
+               aria-label="Toggle navigation menu"><i></i></a>
             
             <aside id="colorlib-aside" role="complementary" class="border js-fullheight no-print">
                <div class="text-center">
@@ -32,10 +36,10 @@
                   <h1 id="colorlib-logo"><a href="./index.html">Sai Kishore</a></h1>
                   <span class="position">SDET | Automation Engineer</span>
                </div>
-               <nav id="colorlib-main-menu" role="navigation" class="navbar" style="padding-top: 2em">
+               <nav id="colorlib-main-menu" role="navigation" class="navbar">
                   <div id="navbar" class="collapse">
                      <ul>
-                        <li><a href="#" data-nav-section="about">About</a></li>
+                        <li class="active"><a href="#" data-nav-section="about">About</a></li>
                         <li><a href="#" data-nav-section="skills">Technical Skills</a></li>
                         <li><a href="#" data-nav-section="projects">Projects</a></li>
                         <li><a href="#" data-nav-section="education">Education</a></li>
@@ -46,7 +50,6 @@
             </aside>
 
             <div id="colorlib-main">
-               
                <section class="colorlib-about" data-section="about">
                   <div class="colorlib-narrow-content">
                      <div class="row animate-box" data-animate-effect="fadeInLeft">
@@ -54,7 +57,7 @@
                            <h1>About</h1>
                            <div class="about-container">
                                <p class="about-intro">Hi 👋 I'm <strong>Sai Kishore</strong>.</p>
-                               <p class="about-desc">
+                               <p>
                                   I am an <strong>Automation Engineer / SDET</strong> specializing in building robust test frameworks and backend solutions. 
                                   Expert in Playwright and Selenium with a strong foundation in ECE and Python development.
                                </p>
@@ -77,7 +80,7 @@
                       <div class="row">
                           <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                               <div class="skill-category">
-                                  <h3><span class="skill-emoji">🧪</span> Automation & Testing</h3>
+                                  <h3>🧪 Automation & Testing</h3>
                                   <ul>
                                       <li><i class="fa fa-check-square-o"></i> Playwright (Java/Python)</li>
                                       <li><i class="fa fa-cogs"></i> Selenium WebDriver</li>
@@ -87,7 +90,7 @@
                           </div>
                           <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
                               <div class="skill-category">
-                                  <h3><span class="skill-emoji">💻</span> Languages & Backend</h3>
+                                  <h3>💻 Languages & Backend</h3>
                                   <ul>
                                       <li><i class="fa fa-code"></i> Java / Python</li>
                                       <li><i class="fa fa-server"></i> Flask / Socket.IO</li>
@@ -99,7 +102,7 @@
                       <div class="row">
                           <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                               <div class="skill-category">
-                                  <h3><span class="skill-emoji">🐧</span> Operating System</h3>
+                                  <h3>🐧 Operating System</h3>
                                   <ul>
                                       <li><i class="fa fa-linux"></i> Linux (Ubuntu/Debian)</li>
                                       <li><i class="fa fa-terminal"></i> Shell Scripting</li>
@@ -108,7 +111,7 @@
                           </div>
                           <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
                               <div class="skill-category">
-                                  <h3><span class="skill-emoji">🔁</span> Version Control & Tools</h3>
+                                  <h3>🔁 Version Control & Tools</h3>
                                   <ul>
                                       <li><i class="fa fa-github"></i> Git & GitHub</li>
                                       <li><i class="fa fa-cloud"></i> AWS (EC2 Management)</li>
@@ -126,13 +129,11 @@
                      <ul id="accordion" class="accordion animate-box" data-animate-effect="fadeInLeft">
                         <li>
                            <div class="link">Web Projects <i class="fa fa-chevron-down"></i></div>
-                           <ul id="web-projects" class="submenu">
-                              </ul>
+                           <ul id="web-projects" class="submenu"></ul>
                         </li>
                         <li>
                            <div class="link">Automation & Software <i class="fa fa-chevron-down"></i></div>
-                           <ul id="software-projects" class="submenu">
-                              </ul>
+                           <ul id="software-projects" class="submenu"></ul>
                         </li>
                      </ul>
                   </div>
@@ -141,11 +142,11 @@
                <section class="colorlib-education" data-section="education">
                   <div class="colorlib-narrow-content">
                      <div class="row animate-box"><div class="col-md-12"><h1>Education</h1></div></div>
-                     <div class="education-block animate-box" style="margin-top: 20px;">
-                        <table style="width:100%; font-size: 16px;">
-                           <tr><td style="font-weight:bold; width: 140px;">College:</td><td>Bharath University</td></tr>
-                           <tr><td style="font-weight:bold;">Year:</td><td>2018 - 2022</td></tr>
-                           <tr><td style="font-weight:bold;">Degree:</td><td>B.Tech in ECE</td></tr>
+                     <div class="education-block animate-box">
+                        <table class="edu-table">
+                           <tr><td class="edu-label">College:</td><td>Bharath University</td></tr>
+                           <tr><td class="edu-label">Year:</td><td>2018 - 2022</td></tr>
+                           <tr><td class="edu-label">Degree:</td><td>B.Tech in ECE</td></tr>
                         </table>
                      </div>
                   </div>
@@ -157,18 +158,20 @@
                         <div class="col-md-12"><h1>Contact</h1></div>
                         <div class="col-md-12 contact-info">
                             <p><b>E-mail:&nbsp;</b><a href="mailto:ceemalasai143@gmail.com">ceemalasai143@gmail.com</a></p>
-                            <p><b>Linkedin:&nbsp;</b><a href="https://www.linkedin.com/in/saikishore-ceemala/" target="_blank">View My LinkedIn Profile</a></p>
+                            <p><b>Linkedin:&nbsp;</b><a href="https://www.linkedin.com/in/saikishore-ceemala/" target="_blank" rel="noopener noreferrer">View My LinkedIn Profile</a></p>
                         </div>
                      </div>
                   </div>
                </section>
+            </div>
+         </div>
+      </div>
 
-            </div></div></div><script src="js/jquery.min.js"></script>
+      <script src="js/jquery.min.js"></script>
       <script src="js/jquery.easing.1.3.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.waypoints.min.js"></script>
       <script src="js/main.js"></script>
-      
       <script type="module" src="js/populateHTML.js"></script>
    </body>
 </html>
