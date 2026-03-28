@@ -16,31 +16,28 @@ export default {
     },
     skills: [
         {
-            title: "Backend Development",
-            skillName: "Python, MySQL",
-            color: "2",
+            title: "🧪 Automation & Testing",
+            skillName: "Playwright, Selenium, TestNG",
+            percentage: "90",
+        },
+        {
+            title: "💻 Languages & Backend",
+            skillName: "Java, Python, Flask, MySQL",
+            percentage: "85",
+        },
+        {
+            title: "🐧 Operating System",
+            skillName: "Linux (Ubuntu, Debian), Shell",
             percentage: "80",
         },
         {
-            title: "operating system",
-            skillName: "Linux (Ubuntu/Debian)",
-            color: "4",
-            percentage: "70",
-        },
-        {
-            title: "Version Control",
-            skillName: "Git & GitHub",
-            color: "7",
-            percentage: "70",
-        },
-        {
-            title: "Editor",
-            skillName: "VS Code",
-            color: "6",
-            percentage: "70",
+            title: "🔁 Version Control & Tools",
+            skillName: "Git, GitHub, AWS, VS Code",
+            percentage: "75",
         },
     ],
-    projects: {
+
+projects: {
         web: [
             {
                 projectName: "Home System Using Voice Assistant",
