@@ -50,26 +50,33 @@ import data from './db.js';
             }
         }
 
-        // --- Technical Skills Section ---
-        const skillCategories = document.querySelectorAll('.skill-category');
-        if (skillCategories.length > 0 && data.skills) {
-            // Mapping skills from db.js to the 4 boxes in HTML
-            data.skills.forEach((skill, index) => {
-                if (skillCategories[index]) {
-                    const titleEl = skillCategories[index].querySelector('h3');
-                    const listEl = skillCategories[index].querySelector('ul');
-                    
-                    if (titleEl) titleEl.innerText = skill.title;
-                    if (listEl) {
-                        // Using a progress bar look or simple list
-                        listEl.innerHTML = `
-                            <li><i class="fa fa-code"></i> ${skill.skillName}</li>
-                            <li style="font-size: 12px; color: #888;">Proficiency: ${skill.percentage}%</li>
-                        `;
-                    }
-                }
-            });
+       // --- Technical Skills Section ---
+const skillCategories = document.querySelectorAll('.skill-category');
+if (skillCategories.length > 0 && data.skills) {
+    data.skills.forEach((skill, index) => {
+        if (skillCategories[index]) {
+            const titleEl = skillCategories[index].querySelector('h3');
+            const listEl = skillCategories[index].querySelector('ul');
+            
+            if (titleEl) titleEl.innerHTML = skill.title;
+            if (listEl) {
+                // Map icons to the 4 boxes defined in your HTML
+                const icons = ["fa-check-square-o", "fa-code", "fa-linux", "fa-github"];
+                const icon = icons[index] || "fa-code";
+
+                listEl.innerHTML = `
+                    <li><i class="fa ${icon}"></i> ${skill.skillName}</li>
+                    <li style="font-size: 12px; color: #888; margin-top: 5px;">
+                        <div style="width: 100%; background: #eee; height: 4px; border-radius: 2px; margin-bottom: 3px;">
+                            <div style="width: ${skill.percentage}%; background: #2c98f0; height: 100%; border-radius: 2px;"></div>
+                        </div>
+                        Proficiency: ${skill.percentage}%
+                    </li>
+                `;
+            }
         }
+    });
+}
 
         // --- Projects Section ---
         const populateProjectList = (projectList, containerId) => {
